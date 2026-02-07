@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Webpage</title>
+ 
+  <style>
+  
+    :root { 
+      --accent: #4C3413; 
+      --bg: #f8fafc; 
+      --text: #0f172a; }
+    
+    body { 
+      margin:0; 
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; 
+      background:var(--bg); 
+      color:var(--text); 
+      line-height:1.5; }
+    
+    header { 
+      background:linear-gradient(90deg,#773333 0,#eaf2ff 100%); 
+      padding:1rem; 
+      box-shadow:0 1px 0 rgba(15,23,42,0.05); }
+    
+    .container { 
+      max-width:900px; 
+      margin:0 auto; 
+      padding:1rem; }
+    
+    nav { 
+      display:flex; gap:1rem; 
+      align-items:center; }
+      
+    h1 { 
+      margin:0; 
+      font-size:1.25rem; }
+    
+    .hero { 
+      background:#DBC3C3; 
+      border-radius:8px; 
+      padding:2rem; 
+      margin-top:1rem; 
+      box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+    
+    .grid { 
+      display:grid; 
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; 
+      margin-top:1rem; }
+    
+    .card { 
+      background:#E6DFDF; 
+      padding:1rem; 
+      border-radius:8px; 
+      box-shadow:0 4px 12px rgba(2,6,23,0.04);
+      color: #7A4A4A;
+    }
+    
+    .link a:link {
+      background: #D3C5C5;
+      color: #7A4A4A;
+      text-decoration: none;
+      padding:0.5rem 0.8rem;
+      border-radius:6px;
+    }
+      
+    footer { 
+      text-align:center; 
+      color:#475569; 
+      font-size:0.9rem; 
+      padding:2rem 0; }
+    
+    a.button { 
+      display:inline-block; background:var(--accent); color:white; 
+      padding:0.5rem 0.8rem; border-radius:6px; 
+      text-decoration:none; }
+      
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <h1>My Site</h1>
+        <div style="margin-left:auto;">
+          <a href="#" style="color:var(--accent); text-decoration:none;">Home</a>
+          <a href="#" style="margin-left:1rem; color:#64748b; text-decoration:none;">About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome!!!</h2>
+      <p>This is a basic webpage that I created — responsive and can be improve.</p>
+      <p>
+        <a class="button" href="#features">Get started</a></p>
+    </section>
+    
+    <section id="features" class="grid">
+  <div class="card">
+    <h3>Feature 1</h3>
+    <p>Hi, this is my activity 2.</p>
+  </div>
+  <div class="card">
+    <h3>Feature 2</h3>
+    <p>You can click the button below if you want to know my favorite song. (⁠◕⁠ᴗ⁠◕⁠✿⁠)</p>
+
+   <div class="link">
+    <a href="https://youtu.be/_JGGLJMpVks?si=maSrLGbnwfMUfvTf">My favorite song.</a> </p>
+   </div>
+   
+    </div>
+  <div class="card">
+    <h3>Contact</h3>
+    <p> 
+    Email: <a href="mailto: ericamaihidalgo@gmail.com">ericamaihidalgo@gmail.com</a></p>
+  </div>
+  
+</section>
+
+
+</main>
+<footer>
+    <div class="container">© <span id="year"></span> My Site | Hidalgo, Erica</div>
+  </footer>
+  
+  
+
+  </body>
+</html>
